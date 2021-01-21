@@ -1,32 +1,26 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Relatives
 {
     class WorkingWithFile
     {
-        private string Path = $@"C:\Users\ateru\Desktop\Лабы\relatives\Relatives\file.txt";
+        private string Path1 { get; set; } = Environment.CurrentDirectory + @"\test.txt";
 
         public void EnteringAPath(string z)
         {
-            Path = z;
+            Path1 = z;
         }
 
         public string RequestPath()
         {
-            return Path;
+            return Path1;
         }
         
         private string[] ReadFile()
         {
-            /*int Length = File.ReadAllLines(path: Path).Length;
-            string[] FileText;
-            FileText = new string[Length];
-            return FileText;*/
-            var arStr = File.ReadAllLines(Path);
-            return arStr;
+            var ArStr = File.ReadAllLines(Path1);
+            return ArStr;
         }
 
         public string[] ReadFileP()
