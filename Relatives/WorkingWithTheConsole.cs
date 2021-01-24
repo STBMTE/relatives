@@ -7,7 +7,7 @@ namespace Relatives
         public void Write()
         {
             WorkingWithFile b = new WorkingWithFile();
-            string[] str = b.ReadFileP();
+            var str = b.PublicReadFile();
             int leng = str.Length;
             for (int i = 0; i < leng; i++)
             {
