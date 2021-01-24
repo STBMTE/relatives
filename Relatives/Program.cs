@@ -1,4 +1,6 @@
-﻿namespace Relatives
+﻿using System;
+
+namespace Relatives
 {
     class Program
     {

@@ -6,15 +6,12 @@ namespace Relatives
     {
         public void Write()
         {
-            WorkingWithFile b = new WorkingWithFile();
-            var str = b.PublicReadFile();
-            int leng = str.Length;
+            SplitArray b = new SplitArray();
+            var arr = b.ExcludingSplits();
+            int leng = arr.Length;
             for (int i = 0; i < leng; i++)
             {
-                if(str[i] != "")
-                {
-                    Console.WriteLine(str[i]);
-                }
+                Console.WriteLine(arr[i]);
             }
         }
     }
